@@ -1,0 +1,10 @@
+#重新生成签名。
+sudo pacman-key --init
+sudo pacman-key --populate archlinux
+sudo pacman-key --refresh-keys
+
+
+#A start job is running for Load/Save Random Seed (1min 36 / 9min 58s)
+ sudo pacman -S haveged
+ systemctl start haveged
+ systemctl enable haveged
